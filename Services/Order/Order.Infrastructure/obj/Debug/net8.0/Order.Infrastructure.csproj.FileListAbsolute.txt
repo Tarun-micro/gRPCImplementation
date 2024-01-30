@@ -1,0 +1,17 @@
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\bin\Debug\net8.0\Order.Infrastructure.deps.json
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\bin\Debug\net8.0\Order.Infrastructure.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\bin\Debug\net8.0\Order.Infrastructure.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.AssemblyInfoInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.AssemblyInfo.cs
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.csproj.CoreCompileInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\refint\Order.Infrastructure.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\ref\Order.Infrastructure.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\bin\Debug\net8.0\Order.Domain.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\bin\Debug\net8.0\SharedLib.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\bin\Debug\net8.0\SharedLib.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\bin\Debug\net8.0\Order.Domain.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.csproj.AssemblyReference.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.csproj.CopyComplete

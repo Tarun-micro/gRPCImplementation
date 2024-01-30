@@ -1,0 +1,17 @@
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.csproj.AssemblyReference.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.AssemblyInfoInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.AssemblyInfo.cs
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.csproj.CoreCompileInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\Product.Infrastructure.deps.json
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\Product.Infrastructure.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\Product.Infrastructure.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\SharedLib.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\SharedLib.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.csproj.CopyComplete
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\refint\Product.Infrastructure.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\ref\Product.Infrastructure.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\Product.Domain.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\Product.Domain.pdb

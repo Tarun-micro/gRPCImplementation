@@ -1,0 +1,11 @@
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\bin\Debug\net8.0\Order.Domain.deps.json
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\bin\Debug\net8.0\Order.Domain.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\bin\Debug\net8.0\Order.Domain.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\obj\Debug\net8.0\Order.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\obj\Debug\net8.0\Order.Domain.AssemblyInfoInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\obj\Debug\net8.0\Order.Domain.AssemblyInfo.cs
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\obj\Debug\net8.0\Order.Domain.csproj.CoreCompileInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\obj\Debug\net8.0\Order.Domain.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\obj\Debug\net8.0\refint\Order.Domain.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\obj\Debug\net8.0\Order.Domain.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Domain\obj\Debug\net8.0\ref\Order.Domain.dll

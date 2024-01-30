@@ -1,0 +1,11 @@
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\bin\Debug\net8.0\SharedLib.deps.json
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\bin\Debug\net8.0\SharedLib.dll
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\bin\Debug\net8.0\SharedLib.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\obj\Debug\net8.0\SharedLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\obj\Debug\net8.0\SharedLib.AssemblyInfoInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\obj\Debug\net8.0\SharedLib.AssemblyInfo.cs
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\obj\Debug\net8.0\SharedLib.csproj.CoreCompileInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\obj\Debug\net8.0\SharedLib.dll
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\obj\Debug\net8.0\refint\SharedLib.dll
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\obj\Debug\net8.0\SharedLib.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Shared\SharedLib\obj\Debug\net8.0\ref\SharedLib.dll

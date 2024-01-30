@@ -1,0 +1,11 @@
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\bin\Debug\net8.0\Product.Domain.deps.json
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\bin\Debug\net8.0\Product.Domain.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\bin\Debug\net8.0\Product.Domain.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\obj\Debug\net8.0\Product.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\obj\Debug\net8.0\Product.Domain.AssemblyInfoInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\obj\Debug\net8.0\Product.Domain.AssemblyInfo.cs
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\obj\Debug\net8.0\Product.Domain.csproj.CoreCompileInputs.cache
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\obj\Debug\net8.0\Product.Domain.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\obj\Debug\net8.0\refint\Product.Domain.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\obj\Debug\net8.0\Product.Domain.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Domain\obj\Debug\net8.0\ref\Product.Domain.dll

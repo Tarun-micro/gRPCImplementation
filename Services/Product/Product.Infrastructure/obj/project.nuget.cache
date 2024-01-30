@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "lfu7ERDZs63lbg55MBbVB1PHdCvQrbANt76wze0YGfmvbhG5QtMakP8xLnX1zKfYPpXER39MpLC+vBfVNK47FQ==",
+  "success": true,
+  "projectFilePath": "C:\\MicroservicePractice\\gRPCImplementation\\src\\Services\\Product\\Product.Infrastructure\\Product.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tarun\\.nuget\\packages\\google.protobuf\\3.21.5\\google.protobuf.3.21.5.nupkg.sha512",
+    "C:\\Users\\Tarun\\.nuget\\packages\\grpc.aspnetcore.server\\2.49.0\\grpc.aspnetcore.server.2.49.0.nupkg.sha512",
+    "C:\\Users\\Tarun\\.nuget\\packages\\grpc.core.api\\2.49.0\\grpc.core.api.2.49.0.nupkg.sha512",
+    "C:\\Users\\Tarun\\.nuget\\packages\\grpc.net.common\\2.49.0\\grpc.net.common.2.49.0.nupkg.sha512",
+    "C:\\Users\\Tarun\\.nuget\\packages\\grpc.tools\\2.49.0\\grpc.tools.2.49.0.nupkg.sha512",
+    "C:\\Users\\Tarun\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
