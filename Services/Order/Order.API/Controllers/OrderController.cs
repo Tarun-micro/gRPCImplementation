@@ -23,5 +23,25 @@ namespace Order.API.Controllers
         {
             return Ok(await _orderService.CreateOrder(requestModel));
         }
+
+        [HttpGet(Name = "OrderDetails")]
+        public async Task<IActionResult> GetOrderDetails()
+        {
+            return Ok(await _orderService.GetOrderDetails());
+        }
+
+        [HttpGet]
+        [Route("InitiateClientStreaming")]
+        public async Task<IActionResult> InitiateClientStreaming()
+        {
+            return Ok(await _orderService.InitiateClientStreaming());
+        }
+
+        [HttpGet]
+        [Route("InitiateDuplexStreaming")]
+        public async Task<IActionResult> InitiateDuplexStreaming()
+        {
+            return Ok(await _orderService.InitiateClientStreaming());
+        }
     }
 }

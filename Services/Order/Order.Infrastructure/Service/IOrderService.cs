@@ -10,5 +10,7 @@ namespace Order.Infrastructure.Service
     public interface IOrderService
     {
         Task<string> CreateOrder(CreateOrderRequestModel requestModel);
+        Task<string> GetOrderDetails();
+        Task<string> InitiateClientStreaming();
     }
 }

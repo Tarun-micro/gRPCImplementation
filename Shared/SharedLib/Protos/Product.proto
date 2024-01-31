@@ -2,11 +2,14 @@ syntax = "proto3";
 
 option csharp_namespace = "SharedLib";
 
-//unary Call
 service ProductGrpc {
- rpc GetProducts (ProductRequestModel) returns (GetProductResponse);
+ rpc GetProducts (ProductRequestModel) returns (GetProductResponse);  // Unary Call 
+ rpc GetProductsList (VoidPayLoad) returns ( stream GetProductResponse);  // Server Side Streaming 
+ rpc GetProductListClientStream (stream ProductRequestModel) returns (GetProductResponse); // Client Side Streaming
+ rpc GetProductListDuplexStream (stream ProductRequestModel) returns (stream GetProductResponse); // Client Server Streaming
 }
 
+message VoidPayLoad{}
 message ProductRequestModel {
  int32 id = 1;
 }

@@ -49,12 +49,38 @@ namespace SharedLib {
     static readonly grpc::Marshaller<global::SharedLib.ProductRequestModel> __Marshaller_ProductRequestModel = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::SharedLib.ProductRequestModel.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::SharedLib.GetProductResponse> __Marshaller_GetProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::SharedLib.GetProductResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::SharedLib.VoidPayLoad> __Marshaller_VoidPayLoad = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::SharedLib.VoidPayLoad.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> __Method_GetProducts = new grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProducts",
+        __Marshaller_ProductRequestModel,
+        __Marshaller_GetProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::SharedLib.VoidPayLoad, global::SharedLib.GetProductResponse> __Method_GetProductsList = new grpc::Method<global::SharedLib.VoidPayLoad, global::SharedLib.GetProductResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetProductsList",
+        __Marshaller_VoidPayLoad,
+        __Marshaller_GetProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> __Method_GetProductListClientStream = new grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(
+        grpc::MethodType.ClientStreaming,
+        __ServiceName,
+        "GetProductListClientStream",
+        __Marshaller_ProductRequestModel,
+        __Marshaller_GetProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> __Method_GetProductListDuplexStream = new grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "GetProductListDuplexStream",
         __Marshaller_ProductRequestModel,
         __Marshaller_GetProductResponse);
 
@@ -91,25 +117,121 @@ namespace SharedLib {
       {
       }
 
+      /// <summary>
+      /// Unary Call 
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::SharedLib.GetProductResponse GetProducts(global::SharedLib.ProductRequestModel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProducts(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Unary Call 
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::SharedLib.GetProductResponse GetProducts(global::SharedLib.ProductRequestModel request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetProducts, null, options, request);
       }
+      /// <summary>
+      /// Unary Call 
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::SharedLib.GetProductResponse> GetProductsAsync(global::SharedLib.ProductRequestModel request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProductsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Unary Call 
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::SharedLib.GetProductResponse> GetProductsAsync(global::SharedLib.ProductRequestModel request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetProducts, null, options, request);
+      }
+      /// <summary>
+      /// Server Side Streaming 
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::SharedLib.GetProductResponse> GetProductsList(global::SharedLib.VoidPayLoad request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetProductsList(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Server Side Streaming 
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::SharedLib.GetProductResponse> GetProductsList(global::SharedLib.VoidPayLoad request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_GetProductsList, null, options, request);
+      }
+      /// <summary>
+      /// Client Side Streaming
+      /// </summary>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncClientStreamingCall<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> GetProductListClientStream(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetProductListClientStream(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Client Side Streaming
+      /// </summary>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncClientStreamingCall<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> GetProductListClientStream(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncClientStreamingCall(__Method_GetProductListClientStream, null, options);
+      }
+      /// <summary>
+      /// Client Server Streaming
+      /// </summary>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> GetProductListDuplexStream(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetProductListDuplexStream(new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Client Server Streaming
+      /// </summary>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncDuplexStreamingCall<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> GetProductListDuplexStream(grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_GetProductListDuplexStream, null, options);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

@@ -15,3 +15,4 @@ C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructu
 C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\bin\Debug\net8.0\Order.Domain.pdb
 C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.csproj.AssemblyReference.cache
 C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.csproj.CopyComplete
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.sourcelink.json

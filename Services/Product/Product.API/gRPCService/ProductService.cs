@@ -1,4 +1,5 @@
 ﻿using Grpc.Core;
+using Product.Domain.DomainEntities;
 using SharedLib;
 using domain = Product.Domain.DomainEntities;
 namespace Product.API.gRPCService
@@ -25,6 +26,39 @@ namespace Product.API.gRPCService
                 Name = product.Name,
                 Qty = product.Qty,
             };
+        }
+
+        public override async Task GetProductsList(VoidPayLoad request, IServerStreamWriter<GetProductResponse> responseStream, ServerCallContext context)
+        {
+            var i = 0;
+            while (!context.CancellationToken.IsCancellationRequested && i < 50)
+            {
+                await Task.Delay(10);
+                await responseStream.WriteAsync(new GetProductResponse()
+                {
+                    Description = "Description",
+                    Id = 1,
+                    Name = "SmartPhones",
+                    Qty = 24,
+                });
+                i++;
+            }
+        }
+
+        public override async Task<GetProductResponse> GetProductListClientStream(IAsyncStreamReader<ProductRequestModel> requestStream, ServerCallContext context)
+        {
+            var response = new GetProductResponse();
+            while (await requestStream.MoveNext() && !context.CancellationToken.IsCancellationRequested)
+            {
+                var i = requestStream.Current;
+                response.Id = i.Id;
+            }
+            return await Task.FromResult<GetProductResponse>(response);
+        }
+
+        public override Task GetProductListDuplexStream(IAsyncStreamReader<ProductRequestModel> requestStream, IServerStreamWriter<GetProductResponse> responseStream, ServerCallContext context)
+        {
+            return base.GetProductListDuplexStream(requestStream, responseStream, context);
         }
     }
 }

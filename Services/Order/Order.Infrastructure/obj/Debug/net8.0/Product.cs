@@ -24,15 +24,21 @@ namespace SharedLib {
     static ProductReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg1Qcm9kdWN0LnByb3RvIiEKE1Byb2R1Y3RSZXF1ZXN0TW9kZWwSCgoCaWQY",
-            "ASABKAUiUAoSR2V0UHJvZHVjdFJlc3BvbnNlEgoKAmlkGAEgASgFEgwKBG5h",
-            "bWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkSCwoDcXR5GAQgASgDMkcK",
-            "C1Byb2R1Y3RHcnBjEjgKC0dldFByb2R1Y3RzEhQuUHJvZHVjdFJlcXVlc3RN",
-            "b2RlbBoTLkdldFByb2R1Y3RSZXNwb25zZUIMqgIJU2hhcmVkTGliYgZwcm90",
-            "bzM="));
+            "Cg1Qcm9kdWN0LnByb3RvIg0KC1ZvaWRQYXlMb2FkIiEKE1Byb2R1Y3RSZXF1",
+            "ZXN0TW9kZWwSCgoCaWQYASABKAUiUAoSR2V0UHJvZHVjdFJlc3BvbnNlEgoK",
+            "AmlkGAEgASgFEgwKBG5hbWUYAiABKAkSEwoLZGVzY3JpcHRpb24YAyABKAkS",
+            "CwoDcXR5GAQgASgDMpcCCgtQcm9kdWN0R3JwYxI4CgtHZXRQcm9kdWN0cxIU",
+            "LlByb2R1Y3RSZXF1ZXN0TW9kZWwaEy5HZXRQcm9kdWN0UmVzcG9uc2USNgoP",
+            "R2V0UHJvZHVjdHNMaXN0EgwuVm9pZFBheUxvYWQaEy5HZXRQcm9kdWN0UmVz",
+            "cG9uc2UwARJJChpHZXRQcm9kdWN0TGlzdENsaWVudFN0cmVhbRIULlByb2R1",
+            "Y3RSZXF1ZXN0TW9kZWwaEy5HZXRQcm9kdWN0UmVzcG9uc2UoARJLChpHZXRQ",
+            "cm9kdWN0TGlzdER1cGxleFN0cmVhbRIULlByb2R1Y3RSZXF1ZXN0TW9kZWwa",
+            "Ey5HZXRQcm9kdWN0UmVzcG9uc2UoATABQgyqAglTaGFyZWRMaWJiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::SharedLib.VoidPayLoad), global::SharedLib.VoidPayLoad.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SharedLib.ProductRequestModel), global::SharedLib.ProductRequestModel.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SharedLib.GetProductResponse), global::SharedLib.GetProductResponse.Parser, new[]{ "Id", "Name", "Description", "Qty" }, null, null, null, null)
           }));
@@ -41,6 +47,158 @@ namespace SharedLib {
 
   }
   #region Messages
+  public sealed partial class VoidPayLoad : pb::IMessage<VoidPayLoad>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<VoidPayLoad> _parser = new pb::MessageParser<VoidPayLoad>(() => new VoidPayLoad());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<VoidPayLoad> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::SharedLib.ProductReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public VoidPayLoad() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public VoidPayLoad(VoidPayLoad other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public VoidPayLoad Clone() {
+      return new VoidPayLoad(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as VoidPayLoad);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(VoidPayLoad other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(VoidPayLoad other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class ProductRequestModel : pb::IMessage<ProductRequestModel>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -55,7 +213,7 @@ namespace SharedLib {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SharedLib.ProductReflection.Descriptor.MessageTypes[0]; }
+      get { return global::SharedLib.ProductReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -244,7 +402,7 @@ namespace SharedLib {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::SharedLib.ProductReflection.Descriptor.MessageTypes[1]; }
+      get { return global::SharedLib.ProductReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

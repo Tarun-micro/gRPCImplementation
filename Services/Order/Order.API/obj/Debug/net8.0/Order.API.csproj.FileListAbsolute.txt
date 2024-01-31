@@ -41,3 +41,4 @@ C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.API\bin\Debu
 C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.API\bin\Debug\net8.0\Grpc.Net.Client.dll
 C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.API\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
 C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.API\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Order\Order.API\obj\Debug\net8.0\Order.API.sourcelink.json

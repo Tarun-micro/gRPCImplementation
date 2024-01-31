@@ -49,12 +49,38 @@ namespace SharedLib {
     static readonly grpc::Marshaller<global::SharedLib.ProductRequestModel> __Marshaller_ProductRequestModel = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::SharedLib.ProductRequestModel.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::SharedLib.GetProductResponse> __Marshaller_GetProductResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::SharedLib.GetProductResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::SharedLib.VoidPayLoad> __Marshaller_VoidPayLoad = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::SharedLib.VoidPayLoad.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> __Method_GetProducts = new grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProducts",
+        __Marshaller_ProductRequestModel,
+        __Marshaller_GetProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::SharedLib.VoidPayLoad, global::SharedLib.GetProductResponse> __Method_GetProductsList = new grpc::Method<global::SharedLib.VoidPayLoad, global::SharedLib.GetProductResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "GetProductsList",
+        __Marshaller_VoidPayLoad,
+        __Marshaller_GetProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> __Method_GetProductListClientStream = new grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(
+        grpc::MethodType.ClientStreaming,
+        __ServiceName,
+        "GetProductListClientStream",
+        __Marshaller_ProductRequestModel,
+        __Marshaller_GetProductResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse> __Method_GetProductListDuplexStream = new grpc::Method<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(
+        grpc::MethodType.DuplexStreaming,
+        __ServiceName,
+        "GetProductListDuplexStream",
         __Marshaller_ProductRequestModel,
         __Marshaller_GetProductResponse);
 
@@ -68,8 +94,52 @@ namespace SharedLib {
     [grpc::BindServiceMethod(typeof(ProductGrpc), "BindService")]
     public abstract partial class ProductGrpcBase
     {
+      /// <summary>
+      /// Unary Call 
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::SharedLib.GetProductResponse> GetProducts(global::SharedLib.ProductRequestModel request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Server Side Streaming 
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task GetProductsList(global::SharedLib.VoidPayLoad request, grpc::IServerStreamWriter<global::SharedLib.GetProductResponse> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Client Side Streaming
+      /// </summary>
+      /// <param name="requestStream">Used for reading requests from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::SharedLib.GetProductResponse> GetProductListClientStream(grpc::IAsyncStreamReader<global::SharedLib.ProductRequestModel> requestStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Client Server Streaming
+      /// </summary>
+      /// <param name="requestStream">Used for reading requests from the client.</param>
+      /// <param name="responseStream">Used for sending responses back to the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>A task indicating completion of the handler.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task GetProductListDuplexStream(grpc::IAsyncStreamReader<global::SharedLib.ProductRequestModel> requestStream, grpc::IServerStreamWriter<global::SharedLib.GetProductResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -82,7 +152,10 @@ namespace SharedLib {
     public static grpc::ServerServiceDefinition BindService(ProductGrpcBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetProducts, serviceImpl.GetProducts).Build();
+          .AddMethod(__Method_GetProducts, serviceImpl.GetProducts)
+          .AddMethod(__Method_GetProductsList, serviceImpl.GetProductsList)
+          .AddMethod(__Method_GetProductListClientStream, serviceImpl.GetProductListClientStream)
+          .AddMethod(__Method_GetProductListDuplexStream, serviceImpl.GetProductListDuplexStream).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -93,6 +166,9 @@ namespace SharedLib {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ProductGrpcBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetProducts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(serviceImpl.GetProducts));
+      serviceBinder.AddMethod(__Method_GetProductsList, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::SharedLib.VoidPayLoad, global::SharedLib.GetProductResponse>(serviceImpl.GetProductsList));
+      serviceBinder.AddMethod(__Method_GetProductListClientStream, serviceImpl == null ? null : new grpc::ClientStreamingServerMethod<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(serviceImpl.GetProductListClientStream));
+      serviceBinder.AddMethod(__Method_GetProductListDuplexStream, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::SharedLib.ProductRequestModel, global::SharedLib.GetProductResponse>(serviceImpl.GetProductListDuplexStream));
     }
 
   }

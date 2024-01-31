@@ -40,3 +40,4 @@ C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.API\bin\
 C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.API\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
 C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.API\bin\Debug\net8.0\Grpc.Core.Api.dll
 C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.API\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.API\obj\Debug\net8.0\Product.API.sourcelink.json

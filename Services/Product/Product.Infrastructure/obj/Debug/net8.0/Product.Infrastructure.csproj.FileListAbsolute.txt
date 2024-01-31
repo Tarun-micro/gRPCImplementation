@@ -15,3 +15,4 @@ C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastr
 C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\ref\Product.Infrastructure.dll
 C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\Product.Domain.dll
 C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\bin\Debug\net8.0\Product.Domain.pdb
+C:\MicroservicePractice\gRPCImplementation\src\Services\Product\Product.Infrastructure\obj\Debug\net8.0\Product.Infrastructure.sourcelink.json
