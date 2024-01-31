@@ -18,7 +18,7 @@ namespace Order.Infrastructure.Service
             try
             {
                 GetProductResponse response = await _client.GetProductsAsync(request);
-                if(response != null && response.Qty < 1) {
+                if(response != null && response.Qty < requestModel.ProductQty) {
                     return "Qty not Sufficient";
                 }
             }
