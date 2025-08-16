@@ -1,0 +1,18 @@
+# Visual Studio build output
+**/[Bb]in/
+**/[Oo]bj/
+
+# Visual Studio cache/options directory
+.vs/
+**/.vs/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Visual Studio temporary files
+*.log
+*.vspscc
+*.vssscc
